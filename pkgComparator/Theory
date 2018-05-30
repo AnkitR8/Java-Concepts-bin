@@ -1,0 +1,18 @@
+
+java.util.comparator 
+We need to use comparator interface when we want to order objects on different attributes.
+For example, I want to order employee objects on the Salary basis or on name basis or grade basis.
+
+
+The compare(object o1, object o2) method of comparator interface needs to be implemented for this purpose.
+
+It compares two objects and returns an integer depending upon the comparison:
+positive if o1 is greater than o2
+zero if o1 equals o2
+negative if o1 less than o2
+
+another interface which is used for sorting objects is java.lang.comparable
+But comparable can not sort objects on different attributes. 
+
+Here, we will work with comparator interface.
+ 
