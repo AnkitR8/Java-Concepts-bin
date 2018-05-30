@@ -1,0 +1,28 @@
+Constructor
+
+- A Constructor is a special method that is used to initialize an object.
+  Every class has a constructor. If we don’t explicitly declare a constructor, 
+  then the compiler builds a default constructor for that class. 
+- Default constructor initializes the object with default values like 0, null, 
+  etc depending on the data type.
+- Constructor name must be same as it’s class name.
+- A constructor does not have any return type.
+- A constructor can not be abstract, static, final.
+
+-A constructor is never inherited, so final is meaningless for constructor.
+-A constructor can not be static because 
+   each constructor is being called by its subclass during creation of the object of its subclass, 
+   so if you mark constructor as static, the subclass will not be able to access the constructor 
+   of its parent class because it is marked static and thus belong to the class only.
+   So, object of child class won't be created. 
+   This will violate the whole purpose of inheritance concept and this is the reason why a constructor cannot be static.
+    
+Class P {
+ private P(){};
+}  
+Now, the Class P can not have a child class or can not be extended. Why?
+Because, every time we make child class object, Parent class default constructor is called. 
+So, If P be the parent class, it's constructor is private which can not be accessed.
+
+Therefore a class having private constructor, we can not create any child class,
+    

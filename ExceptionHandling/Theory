@@ -1,0 +1,30 @@
+
+--An exception is a problem that arises during the execution of a program.
+  In other words, exception refers to any abnormality or an error that occurs during Runtime
+  or when the program is being executed.
+
+--An exception can occur for many different reasons.
+  Eg:Dividing a number by zero, A file that needs to be opened cannot be found, Network connection has been lost 
+  in the middle of communications or the JVM has run out of memory.
+
+--Exceptions are caused by user error, programmer error and by physical resources that have failed in some manner.
+  
+--There are three types of exceptions
+1. Errors: Errors are out of programmer’s control. E.g: OutOfMemoryError, StackOverflowError, JVM crash etc. It’s not possible to anticipate and recover from them.
+
+
+2. Checked Exceptions: Checked Exceptions can be predicted or anticipated by the programmer. 
+   E.g: File needed to be opened is not found. Exception is FileNotFoundException. 
+   These type of exceptions can be checked therefore called checked at compile time exceptions.
+
+3. Unchecked Exceptions: Unchecked Exceptions are the class that extends RuntimeException. 
+   Runtime exceptions are caused by bad programming. For E.g: trying to retrieve an element from Array. 
+   We should check the length of the array first otherwise it might throw Exception ArrayIndexOutOfBoundException at run time. 
+   Unchecked Exceptions are ignored at compile time and are checked at Runtime.
+   RuntimeException is the parent class of all runtime Exceptions.
+
+Exception handler - A set of code which can handle an error condition in a program systematically by taking necessary action.
+
+Exception Handling Techniques: 
+Option 1 - try-catch-finally
+Option 2 - throws

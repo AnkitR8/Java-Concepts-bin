@@ -1,0 +1,24 @@
+final
+
+Variable - If a variable is declared as final, it's value can not be changed once assigned.
+         Value is assigned at the time of declaration or in constructor. After that the value can not be changed.
+
+Method - If final is the access modifier for a method, that method can not be overriden in child class.
+           
+Class -  If final is the access modifier for a Class, that class can not be inherited or extended.
+
+Suppose Class is not final and still we don't want to have child class. Then make constructor as private.
+
+E.g:
+Class P {
+ private P(){};
+}  
+Now, the Class P can not have a child class or can not be extended. Why?
+Because, every time we make child class object, Parent class default constructor is called. 
+So, If P be the parent class, it's constructor is private which can not be accessed.
+
+Therefore a class having private constructor, we can not create any child class,
+
+------------------------------------------
+
+
